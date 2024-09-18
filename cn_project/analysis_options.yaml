@@ -1,0 +1,51 @@
+# The file should be named `analysis_options.yaml` and placed at the root of your project.
+
+# Use the recommended linter rules from the Dart team.
+include: package:lints/recommended.yaml
+
+# Customize your linter rules here
+linter:
+  rules:
+    # The following rules are enabled by default in the recommended set.
+    # You can add or remove rules based on your preferences.
+
+    # Enforce type annotations on local variables and parameters
+    always_declare_return_types: true
+
+    # Enforce the use of the `final` keyword when the variable is not reassigned
+    always_specify_types: true
+
+    # Avoid using `print` statements for debugging
+    avoid_print: true
+
+    # Ensure that classes are properly documented
+    public_member_api_docs: true
+
+    # Avoid using `dynamic` type where possible
+    avoid_dynamic_calls: true
+
+    # Use `const` constructors where possible
+    prefer_const_constructors: true
+
+    # Prefer `late` keyword over nullable types where appropriate
+    prefer_late: true
+
+    # Suggest using named parameters where appropriate
+    prefer_named_parameters: true
+
+    # Recommend using `const` constructors
+    prefer_const_literals_to_create_immutables: true
+
+# Analyzer options
+analyzer:
+  # Disallow non-nullable types being used as null
+  errors:
+    # Disallow any analysis errors (including missing required parameters)
+    missing_required_param: error
+
+  # Exclude files or directories from being analyzed
+  exclude:
+    - '**/*.g.dart'  # Exclude generated files
+    - '**/*.pb.dart' # Protobuf generated files
+
+# Additional options for the analyzer can be configured here

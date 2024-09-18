@@ -1,0 +1,27 @@
+name: cn_project
+description: A smart ticketing system for bus stops
+version: 1.0.0
+environment:
+  sdk: ^3.1.1
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  qr_flutter: ^4.0.0
+  http: ^1.2.2
+  provider: ^6.0.0 # Optional: For state management
+  flutter_localizations: # Optional: For localization support
+    sdk: flutter
+  intl: ^0.19.0 # Optional: For internationalization and formatting
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+  - assets\images\bus_pin.png
+  
+    # Define any assets (like images) here if needed
