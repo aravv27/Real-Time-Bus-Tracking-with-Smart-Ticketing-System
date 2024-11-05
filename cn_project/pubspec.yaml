@@ -18,10 +18,22 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  flutter_launcher_icons: ^0.14.1
+
+flutter_launcher_icons:
+  android: launcher_icon
+  ios: true
+  image_path: assets/icon/icon_1.png
+  min_sdk_android: 21
+
 
 flutter:
   uses-material-design: true
   assets:
-  - assets\images\bus_pin.png
-  
+  - assets/images/bus_pin.png
+  - assets/images/bus_stop.png
+  - assets/images/bus.jpg
+  - assets/images/login_card.jpg
+  - assets/images/regis.jpg
+  - assets/images/user_background.jpg
     # Define any assets (like images) here if needed
